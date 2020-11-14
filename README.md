@@ -1,5 +1,5 @@
 # Kris Kindle 
-Organise a kris kindle (Secret Santa) gift exchange through sms. Needs a twilio account.
+Organise a kris kindle (Secret Santa) gift exchange through sms. Needs a twilio account, sign up [here](http://www.twilio.com/referral/nhMAbbi).
 
 ## Properties
 These properties are needed in an application.yaml file
