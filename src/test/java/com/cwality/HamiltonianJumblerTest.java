@@ -13,7 +13,6 @@ import org.slf4j.LoggerFactory;
 
 public class HamiltonianJumblerTest {
     private static final Logger logger = LoggerFactory.getLogger(HamiltonianJumblerTest.class);
-
     
     @Test
     public void testJumbling() {

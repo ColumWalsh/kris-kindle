@@ -22,10 +22,8 @@ public class KindleController {
     SmsSender smsSender;
 
     @Post("/")
-    public List<Match<Person>> runKrisKindle(@Body List<Person> participants, @QueryValue Integer limit,
-            @Nullable @QueryValue(defaultValue = "false") Boolean dryRun) {
-        logger.info("creating kris kindle for group {}. the limit is {} and dry run flag is {} ", participants, limit,
-                dryRun);
-        return smsSender.sendMessages(participants, dryRun, limit);
+    public List<Match<Person>> runKrisKindle(@Body List<Person> participants, @QueryValue Integer limit) {
+        logger.info("creating kris kindle for group {}. the limit is {}", participants, limit);
+        return smsSender.sendMessages(participants, limit);
     }
 }
